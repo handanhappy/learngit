@@ -90,6 +90,9 @@ export const getRouterData = (app) => {
     '/demo/DatePicker': {
       component: dynamicWrapper(app, [], () => import('../routes/Demo/DatePicker')),
     },
+    '/demo/Form': {
+      component: dynamicWrapper(app, [], () => import('../routes/Demo/Form')),
+    },
     '/dashboard/analysis': {
       component: dynamicWrapper(app, ['chart'], () => import('../routes/Dashboard/Analysis')),
     },
